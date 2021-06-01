@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+  .titulo_panel {
+    font-size: 2.5em;
+  }
+
+  .mensaje {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .mensaje p {
+    width: 90%;
+    font-size: 2.5em;
+  }
+  .mensaje img {
+    width: 70%;
+    margin-bottom: 1em;
+  }
+  
+  .total {
+    margin: 2em 0;
+  }
+  .total_info p:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .total_info p:nth-child(2) {
+    width: 100%;
+  }
+  .pagar {
+    width: 100%;
+  }
+  table {
+      display: inline-block;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .table_contenedor {
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+  }
+  .body .grupo_input{
+      flex-direction: column;
+  }
+  .body .grupo_input button{
+      width: 60%;
+  }
+  .body .grupo_input input{
+    width: 100%;
+    margin: .5em 0;
+  }
+
+}

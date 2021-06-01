@@ -1,0 +1,91 @@
+.footer {
+  overflow: hidden;
+}
+footer {
+  background-color: #b4acac;
+  margin-top: 5em;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+footer::before {
+  content: "";
+  width: 150vw;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -5em);
+  background-color: #b4acac;
+  border-radius: 100%;
+}
+
+.contenedor_iconos {
+  margin-bottom: 1em;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+}
+.iconos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 0.8em;
+}
+
+.iconos .icono_contendor {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.icono_contendor i {
+  transform: scale(0.7);
+  transition: all 0.2s ease-in;
+}
+
+.iconos .icono_contendor:hover {
+  color: white;
+  border: 1px solid transparent;
+}
+
+.iconos .icono_contendor:hover i {
+  transform: scale(1.2);
+}
+
+.iconos .icono_contendor:nth-child(1):hover {
+  background-color: #3b5998;
+}
+.iconos .icono_contendor:nth-child(2):hover {
+  background-color: #125688;
+}
+.iconos .icono_contendor:nth-child(3):hover {
+  background-color: #55acee;
+}
+.iconos .icono_contendor:nth-child(4):hover {
+  background-color: #bb0000;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor_iconos {
+    width: 100%;
+  }
+  .iconos .icono_contendor {
+    width: 60px;
+    height: 60px;
+  }
+  .iconos {
+    width: 100%;
+  }
+  footer::before {
+    width: 210vw;  
+  }
+}

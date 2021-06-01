@@ -1,0 +1,236 @@
+body{
+    height: 100vh !important;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.menu{
+    background-color: rgb(39, 34, 34);
+    width: 100%;
+    z-index: 10;
+    color: white;
+    padding: 0em 5em;
+    position: fixed;
+    top:0;
+    
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+
+.menu .menu_label , .menu_label i{
+    padding: 0;
+    margin: 0;
+}
+.menu .menu_label{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.menu_label i:hover{
+    color: rgb(65, 61, 61);
+}
+
+.menu_label i:active{
+    color: rgb(22, 21, 21);
+}
+
+
+nav{
+    background: rgba(29, 28, 28, 0.959);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* display: none; */
+    width: 30%;
+    height: 100vh;
+    color: white;
+    padding: 1em;
+    transition: all .5s ease;
+    z-index: -1000;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    /* display: block; */
+    left: 0;
+    z-index: 1000;
+    transition: all .5s ease;
+}
+
+
+nav .btn_cerrar{
+    position: relative;
+    left: 87%;
+    display: inline-block;
+    width: 15%;
+    padding-right: .3em;
+    font-size: 2.8em;
+    text-align: end;
+    cursor: pointer;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.411) ; */
+    color: rgba(202, 36, 36, 0.753);
+    
+}
+nav > hr{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.411) ;  
+}
+nav .btn_cerrar:hover{
+    color: rgb(202, 36, 36);
+}
+nav .btn_cerrar:active{
+    color: rgb(180, 12, 12)
+}
+nav .contenedor_items_menu{
+    margin-top: 1em;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    min-height: 40vh;
+
+}
+nav .item_menu {
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    /* margin: 1em 0; */
+    transition: all .1s ease-in-out;
+    padding:1em 0;
+    border-radius: 5px;
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0.466); */
+}
+nav .item_menu:hover{
+    border-bottom: 4px solid rgba(255, 255, 255, 0.466);
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.219);
+   
+}
+nav .item_menu span{
+    display: block;
+    width: 100%;
+    transition: all .1s ease-in-out;
+}
+
+nav .item_menu:hover span{
+    text-align: center;
+    position: relative;
+}
+
+nav .item_menu span i{
+    display: inline-block;
+    margin-left: 1em;
+}
+.img_menu{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: var(--fondo-morado);
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    animation: crecer 5s infinite;
+    border-radius: 5px;
+}
+.img_menu img{
+    width: 75%;
+    vertical-align: top;
+    animation: crecerimg 5s infinite;
+}
+.item_menu {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+@keyframes crecer {
+    0%{
+        transform:translateX(-50%) scale(.8);
+        border-radius: 5px;
+    }
+    50%{
+        transform:translateX(-50%) scale(1.2);
+        border-radius: 100%;
+    }
+    100%{
+        transform:translateX(-50%) scale(.8);
+        border-radius: 5px;
+    }
+}
+@keyframes crecerimg {
+    0%{
+        transform:scale(.8);
+    }
+    50%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(.8);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu{
+        padding: 1em;
+        justify-content:flex-end;
+        position: fixed;
+    }    
+    nav{
+        background: rgb(29, 28, 28);
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* display: none; */
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 1em;
+        transition: all .5s ease;
+        z-index: -1000;
+    }
+
+    nav .item_menu{
+        border-bottom: 4px solid rgba(255, 255, 255, 0.466);
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+    nav .item_menu span{
+        text-align: center;
+        position: relative;
+    }
+    nav .btn_cerrar{
+        position: relative;
+        left: 86.8%;
+        display: inline-block;
+        width: 15%;
+        padding-right: .3em;
+        font-size: 2.3em;
+    }
+
+
+    .img_menu{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: var(--fondo-morado);
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        animation: crecer 5s infinite;
+        border-radius: 5px;
+    }
+    .img_menu img{
+        width: 75%;
+        vertical-align: top;
+        animation: crecerimg 5s infinite;
+    }
+}

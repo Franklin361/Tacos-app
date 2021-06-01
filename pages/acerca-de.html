@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="shortcut icon" href="../img/taco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="../css/acerca-de.css">
+    <title>Acerca de</title>
+</head>
+
+<body>
+
+    <div class="none">
+
+        <div class="menu">
+            <label for="menu" class="menu_label"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" name="" id="menu" >
+            <nav>
+                <label for="menu" class="btn_cerrar"><i class="far fa-times-circle"></i></label>
+                <hr>
+                <div class="contenedor_items_menu">
+                    <a href="../index.html" class="item_menu"><span>Home <i class="fas fa-home"></i></span></a>
+                    <a href="./panel.html" class="item_menu"><span>Menú<i class="fas fa-utensils"></i></span></a>
+                    <a href="./carrito.html" class="item_menu"><span>Carrito<i class="fas fa-shopping-cart"></i></span></a>
+                    <p class="item_menu"><span>Acerca de <i class="fas fa-info"></i></span></p>
+                </div>
+                <div class="img_menu">
+                    <img src="../img/taco.png" alt="">
+                </div>
+            </nav>
+        </div>
+
+
+
+        <header>
+            <div class="header">
+                <div class="titulo ">
+                    <h1 class="animate__animated animate__bounceIn">Tacos Don Lola</h1>
+                </div>
+                <div class="contenedor_img">
+                    <img src="../img/taco.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="contenedor">
+            <h2 class="titulo__acerca">Acerca de nosotros</h2>
+
+            <div class="acerca_de">
+                <div class="contenedor_items">
+
+                    <div class="item_acerca">
+                        <div class="info_acerca">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam, impedit, quo aperiam
+                                facere quibusdam ex cupiditate sequi fuga ratione magni recusandae optio nobis
+                                exercitationem sapiente. Ipsam est officia reprehenderit!</p>
+                        </div>
+                        <div class="img_cont_acerca">
+                            <div class="img_acerca">
+                                <img src="../../img/follow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contenedor_items">
+
+                    <div class="item_acerca_down">
+                        <div class="img_cont_acerca">
+                            <div class="img_acerca">
+                                <img src="../../img/follow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info_acerca_down">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquam, impedit, quo aperiam
+                                facere quibusdam ex cupiditate sequi fuga ratione magni recusandae optio nobis
+                                exercitationem sapiente. Ipsam est officia reprehenderit!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <h1 class="titulo__acerca">Ubicados en</h1>
+
+            <div class="contenedor__mapa">
+                <!-- <img src="../img/mapaFake.png" alt=""> -->
+                <div id="mapid"></div>
+            </div>
+
+        </section>
+
+        <div class="footer">
+            <footer>
+                <div class="contenedor_iconos">
+                    <div>
+                        <p>Nuestras redes sociales</p>
+                        <div class="iconos">
+                            <div class="icono_contendor">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="div">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, autem.</p>
+                    </div> -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/5fa83d646f.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded',()=>{
+            document.querySelector('#menu').checked = false
+        });
+        const checkbox = document.querySelector('#menu');
+        checkbox.addEventListener('change', ()=>{
+            (checkbox.checked) 
+            ? document.body.style.overflow = 'hidden' 
+            : document.body.style.overflow = 'auto'
+        }); 
+   
+        var mymap = L.map('mapid').setView([25.906720882097954, -100.20563326748584], 15);
+
+        var marker = L.marker([25.907531553081718, -100.20852470146271]).addTo(mymap);
+        marker.bindPopup("<b>Estamos aquí!</b>").openPopup();
+
+        L.tileLayer(
+            "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZnJhbmtvMzYxIiwiYSI6ImNraXBjdXQ2YzA1MGcydGw3OTNta3lkNWgifQ.dDooExcrHvZCnS45LzXOkg",
+            {
+                maxZoom: 20,
+                id: "mapbox/streets-v11",
+                tileSize: 512,
+                zoomOffset: -1,
+                accessToken: "your.mapbox.access.token",
+            }
+        ).addTo(mymap);
+
+    </script>
+
+</body>
+
+</html>

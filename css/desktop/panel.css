@@ -1,0 +1,139 @@
+
+/* =========== = =======================*/
+/* 		 Variables 
+/* =========== = =======================*/
+
+@import url('../general/variables.css');
+
+/* =========== = =======================*/
+/* 		 Fuente 
+/* =========== = =======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+/* =========== = =======================*/
+/* 		 Menu 
+/* =========== = =======================*/
+
+@import url('../general/menu.css');
+
+/* =========== = =======================*/
+/* 		 Header 
+/* =========== = =======================*/
+@import url('../general/header.css');
+
+
+
+/* =========== = =======================*/
+/* 		 Footer 
+/* =========== = =======================*/
+
+@import url('../general/footer.css');
+
+.menu{
+    position: fixed;
+}
+
+/* =========== = =======================*/
+/* 		 GENERALES 
+/* =========== = =======================*/
+*{ padding: 0; margin: 0; box-sizing: border-box; }
+
+body{ font-family: 'Poppins', sans-serif; font-size: 16px;}
+
+
+.grupo_cateogria{
+    padding: 0 3em;
+}
+.menu_item {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.menu_item .item{
+    width: 45%;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+.item .img_platillo{
+    width: 100%;
+    height: 100%;
+    
+    background: url('../../img/taco.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+.item .info_platillo{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
+}
+
+.info_platillo p{
+    text-align: start;
+    margin: .5em 0;
+    font-size: 1.1em;
+}
+.info_platillo p span{
+    font-weight: bold;
+}
+
+.info_platillo button{
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(55, 173, 194);
+    border: none;
+    border-radius: 5px;
+    padding: .7em 0;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em 0;
+}
+.info_platillo button:hover{
+    background-color: rgb(20, 150, 173);
+}
+.info_platillo .grupo_input{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.grupo_input input{
+    font-size: 1em;
+    padding: .7em;
+}
+/* =========== = =======================*/
+/* 		 Separador 
+/* =========== = =======================*/
+.separador{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3em 0;
+}
+.separador .linea{
+    width: 100%;
+}
+.separador .separador_item{
+    width: 30%;
+    background-color: blueviolet;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 5px;
+    font-size: 1.3em;   
+}
+
+.btn_presionado{
+    background-color: rgb(194, 76, 55) !important;
+
+}
+.btn_presionado:hover{
+    background-color: rgb(192, 50, 31) !important;
+}

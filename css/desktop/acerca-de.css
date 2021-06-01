@@ -1,0 +1,126 @@
+@import url('../general/none.css');
+
+/* =========== = =======================*/
+/* 		 Variables 
+/* =========== = =======================*/
+
+@import url('../general/variables.css');
+
+/* =========== = =======================*/
+/* 		 Fuente 
+/* =========== = =======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+
+/* =========== = =======================*/
+/* 		 Menu 
+/* =========== = =======================*/
+
+@import url('../general/menu.css');
+
+
+/* =========== = =======================*/
+/* 		 Header 
+/* =========== = =======================*/
+
+@import url('../general/header.css');
+
+
+/* =========== = =======================*/
+/* 		 Footer 
+/* =========== = =======================*/
+
+@import url('../general/footer.css');
+
+
+.menu{
+    position: fixed;
+}
+/* =========== = =======================*/
+/* 		 GENERALES 
+/* =========== = =======================*/
+*{ padding: 0; margin: 0; box-sizing: border-box; }
+
+body{ font-family: 'Poppins', sans-serif; font-size: 16px;}
+.acerca_de{ margin-bottom:6em ; }
+.contenedor_items{
+    width: 80%;
+    margin:0 auto;
+}
+.item_acerca{
+    display: grid;
+    grid-template-columns:65% 35%;
+}
+.item_acerca_down{
+    display: grid;
+    grid-template-columns:35% 65%;
+}
+.info_acerca, .info_acerca_down{
+    padding: 1em;
+    font-size: 1.8em;
+
+    display: flex;
+    align-items: center;
+
+}
+.info_acerca{
+    justify-content:start;
+    text-align: start;
+}
+.info_acerca_down{
+    justify-content:end;
+    text-align: end;
+    
+}
+.img_cont_acerca{
+    padding: 1em;
+    width: 100%;
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.img_acerca{
+    width: 350px;
+    height: 350px;
+    background-color: #4d4949;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.img_acerca img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transform: translateX(15px) translateY(-10px);
+    vertical-align: top;
+}
+
+.titulo__acerca{
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor__mapa{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    height: 80vh;
+    background-size: cover;
+    background-color: #e9e3e3; 
+    padding: 2em;
+    border-radius: 5px;
+}
+#mapid { 
+    height:100%; 
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    z-index: 1;
+}
+

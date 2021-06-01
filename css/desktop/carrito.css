@@ -1,0 +1,225 @@
+@import url("../general/none.css");
+
+/* =========== = =======================*/
+/* 		 Variables 
+/* =========== = =======================*/
+
+@import url("../general/variables.css");
+
+/* =========== = =======================*/
+/* 		 Fuente 
+/* =========== = =======================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap");
+
+/* =========== = =======================*/
+/* 		 Menu 
+/* =========== = =======================*/
+
+@import url('../general/menu.css');
+
+/* =========== = =======================*/
+/* 		 Header 
+/* =========== = =======================*/
+@import url("../general/header.css");
+
+/* =========== = =======================*/
+/* 		 Footer 
+/* =========== = =======================*/
+
+@import url("../general/footer.css");
+
+.menu{
+    position: fixed;
+}
+/* =========== = =======================*/
+/* 		 GENERALES 
+/* =========== = =======================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.table_contenedor {
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+.cabecera {
+  background-color: #e9e5e5;
+}
+
+.cabecera th{
+  padding: 1.5em;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.bold{
+    color:rgb(247, 245, 250)
+}
+.nombre{
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.body tr{
+    background-color: #49484bbe;
+}
+
+.body tr>td{
+    padding: 1em 0;
+}
+.body .grupo_input{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.body .grupo_input input{
+    padding: .5em 0;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 .5em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.body .grupo_input input:disabled{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+}
+
+.body .grupo_input button, .eliminar{
+    height: 100%;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    flex: 1.5em;
+}
+.eliminar{
+    
+    padding: .5em 1em;
+    text-align: center;
+    font-size: 1.8em;
+  
+}
+.grupo_input .mas{
+    font-size: 2em;
+    padding: 0 !important;
+    background-color: rgb(218, 89, 89);
+    border: 1px solid rgb(221, 54, 54);
+}
+.grupo_input .mas:hover{
+    background-color: rgb(221, 54, 54);
+}
+.grupo_input .men{
+    font-size: 2em;
+    padding: 0 !important;
+    background-color: rgb(91, 89, 218);
+    border: 1px solid rgb(48, 45, 199);
+}
+.grupo_input .men:hover{
+    background-color: rgb(48, 45, 199);
+}
+
+.eliminar{
+    width: 90%;
+    background-color: rgb(218, 89, 89);
+    border: 1px solid rgb(221, 54, 54);
+    font-weight: bold;  
+}
+.eliminar:hover{
+    background-color: rgb(221, 54, 54);
+}
+.bgnone{
+    background-color: white !important;
+}
+
+.total{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3em 0;
+}
+.total_info p{
+    display: inline-block;
+}
+.total_info p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-right: 1em;
+}
+.total_info p:nth-child(2){
+    background-color: rgba(141, 69, 236, 0.507);
+    border-radius: 5px;
+    font-size: 2.5em;
+    padding: .5em .5em;
+    font-weight: bold;
+    color:rgb(236, 8, 103);
+} 
+.pagar{
+    width: 80%;
+    margin: auto;
+}
+.pagar button{
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.5em;
+    background-color: rgb(129, 165, 125);
+    border: none;
+    border-radius: 5px;
+    color:white;
+}
+.pagar button:hover{
+    background-color: rgb(95, 180, 86);
+}
+.pagar button:active{
+    background-color: rgb(48, 163, 36);
+}
+.normal{
+    font-weight: normal;
+}
+.mensaje{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+
+    font-weight: normal;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 1em;
+}
+.mensaje p{
+    padding-bottom: 10px;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    color: rgb(119, 77, 218);
+    border-bottom: 1px solid rgb(68, 23, 173);
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.mensaje a{
+   display: inline-block;
+   width: 100%;
+   font-size: 1.5em;
+}
+.mensaje img{
+    width: 40%;
+}

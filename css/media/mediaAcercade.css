@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+    .info_acerca, .info_acerca_down{
+        padding: 1em;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;   
+    }
+    .contenedor_items{
+        width: 90%;
+    }
+    .item_acerca, .item_acerca_down{
+        grid-template-columns:1fr;
+    
+    }
+    .item_acerca_down{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img_cont_acerca{
+        padding: 0;
+    }
+    .img_acerca{
+        margin: auto;
+        width: 250px;
+    height: 250px;
+    }
+    .info_acerca, .info_acerca_down{
+        /* justify-content:center; */
+        text-align: justify;
+        margin: 1em 0;
+    }
+    .titulo__acerca{
+        margin-bottom: 0;
+    }
+    .contenedor__mapa{
+        width: 85%;
+    }
+    .acerca_de{ margin-bottom:4em ; }
+}

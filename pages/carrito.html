@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/taco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/carrito.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+
+    <div class="none">
+
+        <div class="menu">
+            <label for="menu" class="menu_label"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" name="" id="menu" >
+            <nav>
+                <label for="menu" class="btn_cerrar"><i class="far fa-times-circle"></i></label>
+                <hr>
+                <div class="contenedor_items_menu">
+                    <a href="../index.html" class="item_menu"><span>Home <i class="fas fa-home"></i></span></a>
+                    <a href="./panel.html" class="item_menu"><span>Menú<i class="fas fa-utensils"></i></span></a>
+                    <p  class="item_menu"><span>Carrito<i class="fas fa-shopping-cart"></i></span></p>
+                    <a href="./acerca-de.html" class="item_menu"><span>Acerca de <i class="fas fa-info"></i></span></a>
+                </div>
+                <div class="img_menu">
+                    <img src="../img/taco.png" alt="">
+                </div>
+            </nav>
+        </div>
+
+        <header>
+            <div class="header">
+                <div class="titulo ">
+                    <h1 class="animate__animated animate__bounceIn">Tacos Don Lola</h1>
+                </div>
+                <div class="contenedor_img">
+                    <img src="../img/taco.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="contenedor_main">
+
+            <h1 class="titulo_panel">Resumen de tu pedido</h1>
+            <hr>
+            <div class="table_contenedor">
+
+                <table class="table">
+                    <thead class="cabecera">
+                        <tr>
+                            <th>Nombre del platillo</th>
+                            <th>Imagen</th>
+                            <th>Cantidad</th>
+                            <th>Precio c/u</th>
+                            <th>Subtotal</th>
+                            <th class="bgnone"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="body">
+                        
+                        
+
+                    </tbody>
+                </table>
+                <div class="total">
+                    <div class="total_info">
+                        <p>Total a pagar: $</p>
+                        <p id="total_precio">100000.99</p>
+                    </div>
+                </div>
+
+                <div class="pagar">
+                    <button class="btn_pagar" id="pagar_total">Realizar la compra</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <div class="contenedor_iconos">
+                    <div>
+                        <p>Nuestras redes sociales</p>
+                        <div class="iconos">
+                            <div class="icono_contendor">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="div">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, autem.</p>
+                    </div> -->
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/5fa83d646f.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script>
+         document.addEventListener('DOMContentLoaded',()=>{
+            document.querySelector('#menu').checked = false
+        });
+         const checkbox = document.querySelector('#menu');
+        checkbox.addEventListener('change', ()=>{
+            (checkbox.checked) 
+            ? document.body.style.overflow = 'hidden' 
+            : document.body.style.overflow = 'auto'
+        }); 
+
+    </script>
+</body>
+
+</html>

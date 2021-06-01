@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/taco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/desktop/index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Tacos app || Login</title>
+</head>
+
+
+<body>
+
+    <div class="none">
+
+
+        <div class="menu">
+            <label for="menu" class="menu_label"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" name="" id="menu" >
+            <nav>
+                
+                <label for="menu" class="btn_cerrar"><i class="far fa-times-circle"></i></label>
+                <hr>
+
+                <div class="contenedor_items_menu">
+                    <p class="item_menu"><span>Home <i class="fas fa-home"></i></span></p>
+                    <a href="./pages/panel.html" class="item_menu"><span>Menú<i class="fas fa-utensils"></i></span></a>
+                    <a href="./pages/carrito.html" class="item_menu"><span>Carrito<i
+                                class="fas fa-shopping-cart"></i></span></a>
+                    <a href="./pages/acerca-de.html" class="item_menu"><span>Acerca de <i
+                                class="fas fa-info"></i></span></a>
+                </div>
+                <div class="img_menu">
+                    <img src="../img/taco.png" alt="">
+                </div>
+            </nav>
+        </div>
+
+        <h1 class="titulo" id="titulo"> Inicio de sesión </h1>
+        <div class="container">
+
+            <div class="login_contenedor animate__animated">
+
+                <div class="contenedor">
+
+                    <div class="caja caja_imagen">
+                        <p id="typed"> <span class="typed"></span></p>
+
+                        <img src="img/taco.png" alt="">
+                    </div>
+
+                    <div class="caja caja_formulario">
+                        <form class="formulario">
+                            <div class="grupo_input">
+                                <label for="user">Nombre de usuario:</label>
+
+                                <div class="input user">
+                                    <input type="text" id="user">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input">
+                                <label for="user">Contraseña: </label>
+
+                                <div class="input pass">
+                                    <input type="password" id="pass">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="botones">
+                                <button id="login_normal">Iniciar sesión</button>
+                                <span>Ó</span>
+                                <button class="google" id="login_google"> Iniciar con Google </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <p class="crear_cuenta">Si quieres crear una cuenta, <span class="link" id="link">da click aqui <i
+                            class="far fa-hand-pointer"></i></span></p>
+
+            </div>
+
+            <div class="registro_contenedor animate__animated">
+
+
+                <!-- AQUI AGREGAS TODO MIJO -->
+
+
+                <div class="contenedor">
+
+                    <div class="caja caja_imagen" id="img_r">
+                        <p> <span class="type_d"></span></p>
+                        <img src="img/add-user.png" alt="">
+                    </div>
+
+                    <div class="caja caja_formulario2" id="caja_r">
+                        <form class="formulario2">
+
+                            <div class="grupo_input nombre_crear">
+
+                                <label for="">Nombre(s)</label>
+                                <div class="input crear">
+                                    <input type="text" id="nombre">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input apellido_crear">
+                                <label for="">Apellidos</label>
+
+                                <div class="input crear">
+                                    <input type="text" id="apellidos">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input email_crear">
+                                <label for="">Correo electronico</label>
+
+                                <div class="input crear">
+                                    <input type="text" id="email">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input user_crear">
+                                <label for="">Nombre de usuario</label>
+
+                                <div class="input crear">
+                                    <input type="text" id="username">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input pass_crear">
+
+                                <label for="">Contraseña</label>
+                                <div class="input crear">
+                                    <input type="password" id="password">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+                            <div class="grupo_input pass2_crear">
+                                <label for="">Confirme su contraseña</label>
+
+                                <div class="input crear">
+                                    <input type="password" id="password_confirm">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                            </div>
+
+
+                        </form>
+                        <div class="boton">
+                            <button id="crear_cuenta">Crear cuenta</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="crear_cuenta">Ya tienes cuenta?, <span class="link" id="link2">inicia sesion aqui! <i
+                            class="far fa-hand-pointer"></i></span></p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+            <footer>
+                <div class="contenedor_iconos">
+                    <div>
+                        <p>Nuestras redes sociales</p>
+                        <div class="iconos">
+                            <div class="icono_contendor">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icono_contendor">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="div">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, autem.</p>
+                </div> -->
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="https://kit.fontawesome.com/5fa83d646f.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#menu').checked = false
+        });
+        
+        const checkbox = document.querySelector('#menu');
+        checkbox.addEventListener('change', ()=>{
+            (checkbox.checked) 
+            ? document.body.style.overflow = 'hidden' 
+            : document.body.style.overflow = 'auto'
+        }); 
+
+        var typed = new Typed('.typed', {
+            strings: [
+                '<b>Taco loco <i class="fas fa-utensils"></i></b>',
+                '<b>Los mejores <i class="fas fa-utensils"></i></b>'
+            ],
+            stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+            typeSpeed: 80, // Velocidad en mlisegundos para poner una letra,
+            startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+            backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+            smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+            shuffle: false, // Alterar el orden en el que escribe las palabras.
+            backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+            loop: true, // Repetir el array de strings
+            loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+            showCursor: true, // Mostrar cursor palpitanto
+            cursorChar: '   |', // Caracter para el cursor
+            contentType: 'html', // 'html' o 'null' para texto sin formato
+        });
+
+        var typed = new Typed('.type_d', {
+            strings: [
+                '<b>Cuenta gratis</b>',
+                '<b>¿Qué esperas?</b>'
+            ],
+            stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+            typeSpeed: 80, // Velocidad en mlisegundos para poner una letra,
+            startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+            backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+            smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+            shuffle: false, // Alterar el orden en el que escribe las palabras.
+            backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+            loop: true, // Repetir el array de strings
+            loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+            showCursor: true, // Mostrar cursor palpitanto
+            cursorChar: '|', // Caracter para el cursor
+            contentType: 'html', // 'html' o 'null' para texto sin formato
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+
+    .registro_contenedor .contenedor .caja{
+        min-height: 300px;
+        width: 100% !important;
+        box-shadow:none;
+    }
+    .caja_imagen p{
+        margin-top: 0;
+    }
+    .caja_imagen img{
+
+       width: 30% !important;
+    }
+
+    .registro_contenedor .contenedor {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .boton{
+        width: 90%;
+    }
+    .formulario2{
+        grid-template-columns: 1fr;
+        gap: 1em;
+        margin-top: 3em;
+    }
+}
+@media screen and (max-width: 425px){
+     .caja_imagen img{
+
+       width: 50% !important;
+    }
+}

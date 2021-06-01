@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+  .titulo {
+    margin-top: 2em;
+  }
+
+  .login_contenedor .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .login_contenedor .contenedor .caja {
+    width: 100%;
+    box-shadow: none;
+    min-height: 100px;
+  }
+  .caja_imagen {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .caja_imagen p {
+    margin: 1em 0;
+    font-size: 2em;
+    padding: 5px;
+  }
+  .login_contenedor .contenedor .caja:nth-child(1) {
+    padding-bottom: 1em;
+  }
+  .input i{
+      width: 15%;
+      font-size: 1rem;
+  }
+  .caja_formulario .grupo_input input{
+    width: 85%;
+    padding: .7em;
+    font-size: 1.2rem;
+  }
+  .caja_formulario{
+    padding: 0em 1em 0 1em;
+  }
+  .crear_cuenta{
+    margin: 1em 0;
+  }
+
+  #typed{
+    margin-top: .5em;
+  }
+}

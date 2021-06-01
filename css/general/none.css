@@ -1,0 +1,51 @@
+/* =========== = =======================*/
+/* 		 NO DISPONIBLE AUN EN MOVIL 
+/* =========== = =======================*/
+
+/* @media screen and (max-width:1300px){
+    html{
+        background: #000 !important;
+        z-index: 1000;
+    }
+    .none{
+        display: none;
+    }
+
+    html::before{
+        line-height:1.5em;
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        content: "No disponible para el puñetas del KIKE 👿";
+        position: absolute;
+        font-weight: bold;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+@media screen and (max-width:500px){
+   
+    html{
+        background: #000 !important;
+        z-index: 1000;
+    }
+    .none{
+        display: none;
+    }
+
+    html::before{
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        content: "No disponible para el puñetas del KIKE 👿";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+} */
